@@ -1,0 +1,48 @@
+<div class="card">
+      <h4 style="text-align: center;margin-top: 15px;">Form</h4>
+      <form id="hello" [formGroup]="userform">
+        <div class="mb-2" appearance="fill">
+        <label class="user">Name</label>:
+        <input type="text" class="form-control"  formControlName="name">
+        </div>
+        <div class="mb-2">
+        <label class="user">Job</label>:
+        <input type="text" class="form-control"  formControlName="job">
+        </div>
+        
+          
+          </form>
+            <button class="btn btn-warning btn-sm" (click)="update()">Update</button>
+            &nbsp;
+           <button  class="btn btn-success" (click)="submit()">Submit</button>
+        </div>
+    
+
+
+
+
+<table class="table table-border table-hover table-success table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Job</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arr of alldata">
+            <td>{{arr.name}}</td>
+            <td>{{arr.job}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="edit(arr)">Edit</button>
+            </td>
+
+            <td>
+                <button  class="btn btn-danger" (click)="delete(arr)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+    

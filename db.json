@@ -1,0 +1,16 @@
+{
+  "user": [
+    {
+      "name": "morpheus",
+      "job": "leader"
+    },
+    {
+      "name": "varsha",
+      "job": "developer"
+    },
+    {
+      "name": "suvarna",
+      "job": "tester"
+    }
+  ]
+}
